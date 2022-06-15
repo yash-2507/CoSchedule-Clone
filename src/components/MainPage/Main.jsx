@@ -4,24 +4,33 @@ import styles from "./Main.module.css";
 import headerImg from "../../assets/Main_Header.png";
 import ProductLogo from "../SVG/ProductLogo";
 import ProductLogo2 from "../SVG/ProductLogo2";
+import { useState } from "react";
 
 export default function Main() {
+    const [showTop, setShowTop] = useState(true);
     return (
         <div className={styles.parent}>
             {/* top notification */}
-            <div className={styles.Main_parent_Notification}>
-                <div></div>
-                <div className={styles.Main_Top_Notification}>
-                    Organize all your marketing in one place with marketing
-                    calendar software from CoSchedule.
-                    <span className={styles.Main_Top_Notification_Span}>
-                        Get Started Free
-                    </span>
+            {showTop && (
+                <div className={styles.Main_parent_Notification}>
+                    <div></div>
+                    <div className={styles.Main_Top_Notification}>
+                        Organize all your marketing in one place with marketing
+                        calendar software from CoSchedule.
+                        <span className={styles.Main_Top_Notification_Span}>
+                            Get Started Free
+                        </span>
+                    </div>
+                    <div
+                        className={styles.CrossSvg}
+                        onClick={() => {
+                            setShowTop(false);
+                        }}
+                    >
+                        <CrossSvg />
+                    </div>
                 </div>
-                <div className={styles.CrossSvg}>
-                    <CrossSvg />
-                </div>
-            </div>
+            )}
 
             {/* main header */}
             <div className={styles.Main_parent_header}>
@@ -206,7 +215,8 @@ export default function Main() {
                     <div className={styles.Main_Products_Content}>
                         <h2>Actionable Marketing Institue</h2>
                         <p>
-                            Develop new marketing skills in 30 minutes (or less).
+                            Develop new marketing skills in 30 minutes (or
+                            less).
                         </p>
                         <ul
                             style={{
@@ -217,7 +227,9 @@ export default function Main() {
                                 gap: 10,
                             }}
                         >
-                            <li>Improve your marketing with fluff-free training</li>
+                            <li>
+                                Improve your marketing with fluff-free training
+                            </li>
                             <li>Spend less time learning & more time doing</li>
                             <li>Learn from industry pros and trust</li>
                         </ul>
