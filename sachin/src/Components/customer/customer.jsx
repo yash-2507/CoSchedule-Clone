@@ -58,6 +58,8 @@ const Customer = () => {
             <input className={styles.last_input} type="text" placeholder="Get Started Free"/>
             
           </div>
+          {/* add footbar here */}
+          {/* <div> footer </div> */}
         </div>
 
         
