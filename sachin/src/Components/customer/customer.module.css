@@ -1,5 +1,5 @@
 .customer_main_div{
-    height:400px;
+    height:300px;
     /* border :1px solid red; */
     display: flex;
     margin: auto;
@@ -11,9 +11,9 @@
     color:white;
 }
 .content1{
-    font-weight: 530;
+    font-weight: 550;
     font-family: "MuseoSans-700",sans-serif; 
-    font-size: 36px; 
+    font-size: 12px; 
     letter-spacing: 1px;
     margin: 10px 0;
     text-align: center;
@@ -64,7 +64,7 @@
 .filter_content2{
     height: 40px;
     background-color: #fff;
-    border: 2px solid #d69509;
+    border: none;
     color: #787878;
 }
 
