@@ -1,11 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import { useEffect } from "react";
 import styles from "./styles/SignUp.module.css";
 
 export default function SignUp() {
+    const [details, setDetails] = useState({
+        name: "",
+        mail: "",
+        company: "",
+        url: "",
+        pass: "",
+    });
     useEffect(() => {
         document.title = "Try CoSchedule Free Now - CoSchedule.com";
     }, []);
+    const handleNameChange = (e) => {
+        setDetails({ ...details, mail: e.target.value });
+    };
+    const handleMailChange = (e) => {
+        setDetails({ ...details, pass: e.target.value });
+    };
+    const handleCompanyChange = (e) => {
+        setDetails({ ...details, company: e.target.value });
+    };
+    const handleUrlChange = (e) => {
+        setDetails({ ...details, url: e.target.value });
+    };
+    const handlePassChange = (e) => {
+        setDetails({ ...details, pass: e.target.value });
+    };
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
+        console.log(details);
+    };
     return (
         <div className={styles.SignUp_parent}>
             <div className={styles.SignUp_Wrapper}>
@@ -18,13 +44,17 @@ export default function SignUp() {
                     </div>
                 </div>
                 <div className={styles.SignUp_container}>
-                    <form className={styles.SignUp_Form}>
+                    <form
+                        className={styles.SignUp_Form}
+                        onSubmit={handleFormSubmit}
+                    >
                         <div>
                             <label>Full Name</label>
                             <input
                                 type="text"
                                 placeholder="Full Name"
                                 required
+                                onChange={handleNameChange}
                             />
                         </div>
                         <div>
@@ -33,6 +63,7 @@ export default function SignUp() {
                                 type="text"
                                 placeholder="Email Address"
                                 required
+                                onChange={handleMailChange}
                             />
                         </div>
                         <div>
@@ -41,6 +72,7 @@ export default function SignUp() {
                                 type="text"
                                 placeholder="Company Name"
                                 required
+                                onChange={handleCompanyChange}
                             />
                         </div>
                         <div>
@@ -49,14 +81,17 @@ export default function SignUp() {
                                 type="text"
                                 placeholder="Company Website URL"
                                 required
+                                onChange={handleUrlChange}
                             />
                         </div>
                         <div>
                             <label>Password</label>
                             <input
-                                type="text"
+                                type="password"
                                 placeholder="Password (minimum 8 characters)"
                                 required
+                                onChange={handlePassChange}
+                                minLength="8"
                             />
                         </div>
                         <div className={styles.SignUp_Submit_Wrapper}>
