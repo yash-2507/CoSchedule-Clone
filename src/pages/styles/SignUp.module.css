@@ -1,0 +1,16 @@
+.SignUp_parent {
+    height: 120vh;
+    /* width: 100vw; */
+    background: #f8f8f8;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.SignUp_Wrapper {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
