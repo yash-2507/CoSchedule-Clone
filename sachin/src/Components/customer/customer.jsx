@@ -13,10 +13,19 @@ const Customer = () => {
        
        <div className={styles.main_Div_Content}>
         {/* //starting div for creating navbar and heading  */}
-          <p className={styles.content1}>CUSTOMER STORIES</p>
-          <h1 className={styles.content2}>Organizing The World</h1>
-          <p className={styles.content3}>CoSchedule helps the world’s best marketing teams take control of their entire marketing strategy. See</p>
-          <p className={styles.content3}>how these featured customers have found success.</p>
+          <div  className={styles.content1_div}>
+               <h1 className={styles.content1}>CUSTOMER STORIES</h1>
+          </div>
+
+         <div className={styles.content2_div}>
+             <h2 className={styles.content2}>Organizing The World</h2>
+         </div>
+         <div className={styles.content3_div}>
+              <p className={styles.content3}>CoSchedule helps the world’s best marketing teams take control of their entire marketing strategy. See</p>
+             <p className={styles.content3}>how these featured customers have found success.</p>
+
+         </div>
+        
        </div>
       </div>
   

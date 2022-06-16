@@ -35,7 +35,9 @@ console.log(show);
                 <option value="b2b">B2B</option>
                 <option value="b2c">B2C</option>
             </select>
+           
 </div>
+   <hr  className={style.filter_hr} />
             <div className={style.sort_main_div}>
 
 
