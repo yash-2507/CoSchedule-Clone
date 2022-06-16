@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import styles from "./styles/SignUp.module.css";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function SignUp() {
     const [details, setDetails] = useState({
@@ -13,11 +15,13 @@ export default function SignUp() {
     useEffect(() => {
         document.title = "Try CoSchedule Free Now - CoSchedule.com";
     }, []);
+    const Navigate = useNavigate();
+
     const handleNameChange = (e) => {
-        setDetails({ ...details, mail: e.target.value });
+        setDetails({ ...details, name: e.target.value });
     };
     const handleMailChange = (e) => {
-        setDetails({ ...details, pass: e.target.value });
+        setDetails({ ...details, mail: e.target.value });
     };
     const handleCompanyChange = (e) => {
         setDetails({ ...details, company: e.target.value });
@@ -31,7 +35,18 @@ export default function SignUp() {
     const handleFormSubmit = (e) => {
         e.preventDefault();
         console.log(details);
+        const postUser = async () => {
+            try {
+                await axios.post("http://localhost:8080/signup", details);
+                alert("User Registered! Now you can Login...");
+                Navigate("/login");
+            } catch (error) {
+                console.log(error.message);
+            }
+        };
+        postUser();
     };
+
     return (
         <div className={styles.SignUp_parent}>
             <div className={styles.SignUp_Wrapper}>

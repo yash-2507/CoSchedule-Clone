@@ -3,8 +3,14 @@ import { useRef } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import styles from "./styles/SignIn.module.css";
+import axios from "axios";
+import { useDispatch } from "react-redux";
+import { loginStatus, setUser } from "../features/auth/authSlice";
+import { useNavigate } from "react-router-dom";
 
 export default function SignIn() {
+    const Navigate = useNavigate();
+    const dispatch = useDispatch();
     useEffect(() => {
         document.title = "CoSchedule Accounts";
     }, []);
@@ -23,9 +29,23 @@ export default function SignIn() {
     };
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(mail, pass);
-        inputMailRef.current.value = "";
-        inputPassRef.current.value = "";
+        const postLogin = async () => {
+            const res = await axios.post("http://localhost:8080/login", {
+                mail,
+                pass,
+            });
+            if (res.data.message === "User Found") {
+                alert("Login Successful");
+                dispatch(loginStatus());
+                dispatch(setUser(res.data.match[0]));
+                inputMailRef.current.value = "";
+                inputPassRef.current.value = "";
+                Navigate("/");
+            } else {
+                alert("Wrong Credentials, Please re-check!");
+            }
+        };
+        postLogin();
     };
 
     return (

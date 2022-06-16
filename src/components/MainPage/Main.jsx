@@ -8,6 +8,7 @@ import { useState } from "react";
 
 export default function Main() {
     const [showTop, setShowTop] = useState(true);
+    // console.log("isLoggedIn: ", isLoggedIn);
     return (
         <div className={styles.parent}>
             {/* top notification */}
