@@ -5,7 +5,7 @@ export const MainDiv = styled.div`
   font-family: museo sans 700 sans-serif;
   width: 100%;
   height: auto;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   color: #223000;
   padding-top: 40px;
 `;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
-export const MainDiv = styled.div``;
+export const MainDiv = styled.div`
+margin:60px auto`;
 export const Container = styled.div`
   width: 85%;
   background-color: whitesmoke;

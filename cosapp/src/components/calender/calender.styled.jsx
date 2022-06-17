@@ -3,11 +3,12 @@ export const MainDiv = styled.div`
   width: 100%;
   height: auto;
   background-color: whitesmoke;
-
-  border: 1px solid yellow;
+  margin-top:-16px;
+  /* border: 1px solid yellow; */
   /* text-align: center;
 align-items: center;
 align-self: center; */
+padding-top:20px;
   @media screen and (max-width: 1000px) {
     background-color: #ffffff;
   }

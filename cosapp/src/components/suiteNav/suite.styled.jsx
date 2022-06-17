@@ -3,7 +3,7 @@ export const MainDiv = styled.div`
 width:100%;
 background-color:#FFFFFF;
 height:61px;
-border:1px solid red;
+/* border:1px solid red; */
 color: #2F2F2F;
 font-family: museo sans 700 sans-serif;
 display: flex;
