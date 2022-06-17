@@ -4,6 +4,7 @@ import Takecontrol from './components/takecontrol/Takecontrol';
 import CalenderTask from './components/calender/CalenderTask';
 import Close from './components/closeTheOutput/Close';
 import StartComp from './components/startComp/StartComp';
+import Benefits from './components/Benefits/Benefits';
 function App() {
   return (
     <div className="App">
@@ -11,7 +12,8 @@ function App() {
       <Takecontrol />
       <CalenderTask />
       <Close />
-      <StartComp/>
+      <StartComp />
+      <Benefits/>
     </div>
   );
 }
