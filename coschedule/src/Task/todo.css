@@ -1,0 +1,90 @@
+
+ .continer {
+    /* position: absolute; */
+ 
+    width: 100vw;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    
+ }
+
+ .abcontaine {
+     margin-top: 5%;
+     width: 30%;
+     height: 500px;
+     border: 1px solid red;
+     margin: auto;
+     justify-content: center;
+ }
+
+
+ .a {
+    background-color: whitesmoke;  
+     justify-content: left;
+     
+     text-align: left; 
+     /* text-align: center; */
+    width: 50%;
+    margin: auto;
+    border-radius: 25px;
+  }
+   .data {
+       width: 90%;
+       margin-top: 20px;
+       display: flex;
+        height: 40px;
+        text-align: center;
+       /* background-color: whitesmoke;   */
+       border-radius: 25px;
+    
+   }
+     .data> p {
+         text-align: center;
+         margin-left: 0%;
+         width: 42%;
+         border-radius: 25px;
+        padding:35px;
+         background-color: whitesmoke; 
+           padding-top: 2%;
+     }
+      /* margin-left: 50px; */
+     .data > button {
+        /* background-color: whitesmoke;  */
+        border:  1px solid  whitesmoke; 
+        border-radius: 25px;
+     margin-left: -3%;
+     }
+     .input {
+       width: 20%;
+       size: 30;
+       margin-top: 2%;
+       height: 70%;
+     }
+     .data > img {
+        width: 12%;
+        height: 70%;
+        margin-top: 2%;
+        margin-left: -4%;
+     }
+  
+  
+  .b {
+      background-color: whitesmoke; 
+      padding: 15px;
+      width: 50%; 
+      color: black;
+      margin-top: 20px; 
+      border: 1px solid whitesmoke;
+      border-radius: 25px;
+  }
+  .c {
+      padding: 10px;
+      margin-left: 20px;
+      border-radius: 16px;
+      font-size: 20px;
+      width: 10%;
+      padding-top: 2%;
+      border: 1px solid whitesmoke;
+  }
