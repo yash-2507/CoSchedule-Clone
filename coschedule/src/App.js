@@ -1,15 +1,11 @@
-import Celender from './Celender/Celender';
-import Headline from './Headline/Headline';
-import logo from './logo.svg';
-import Task from './Task/Task';
+
+ import Celender from "./pages/Celender/Celender.jsx"
 // import './App.css';
 
 function App() {
   return (
     <div className="App">
-     <Celender/>  
-      {/* <Headline/>   */}
-     {/* <Task/> */}
+     <Celender/>
     </div>
   );
 }

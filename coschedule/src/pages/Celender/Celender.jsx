@@ -1,6 +1,7 @@
 import '../Celender/Celender.css';
+import Frome from "../../componet/From"
 import sagar  from "../Celender/Screenshot 2022-06-14 151357.png"
-import Frome from '../componet/From';
+
 const Celender = ()=>{
 
 return (
@@ -252,6 +253,7 @@ return (
       <div className="studioFree">
             <h2>Create Your Forever-Free Marketing Calendar</h2>
             </div>
+            {/* <Frome/> */}
             <Frome/>
             <button  className="button-n">
                 Get Started Now
