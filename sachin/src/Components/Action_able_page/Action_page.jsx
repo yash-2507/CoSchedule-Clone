@@ -4,9 +4,9 @@ import styles from './Action.module.css'
 const Actionable_Market = () => {
   return (
    <>
-   <div className={styles.pagestart_div}>0
-        <svg  x="0" y="0" preserveAspectRatio="none" viewBox="0 0 1293 652">
-            <path d="M0 0h1293v547.5L289.2 650.6c-21.5 2.2-43.2-2.6-61.7-13.8L0 500.1V0z" fill-rule="evenodd" clip-rule="evenodd" fill="#835CE5"></path>
+   <div className={styles.pagestart_div}>
+        <svg  x="0" y="0" preserveAspectRatio="none" viewBox="0 0 1293 702">
+            <path d="M0 0h1293v597.5L289.2 700.6c-21.5 2.2-43.2-2.6-61.7-13.8L0 550.1V0z" fill-rule="evenodd" clip-rule="evenodd" fill="#835CE5"></path>
         </svg>
     </div>
    <div className={styles.start_main_div}>
@@ -83,7 +83,7 @@ const Actionable_Market = () => {
             <p><span className={styles.training_sub_div_span}>Drive better results using proven frameworks, techniques, and strategies found only in the Actionable Marketing Institute.</span></p>
         </div> 
 
-        <div className={styles.training_main_div}>
+        <div className={styles.training_child_div}>
             <img className={styles.training_sub_div1_img}src="https://media.coschedule.com/uploads/2020/09/Academy-Pro-Squeeze-Page-Graphics-05.png" alt="Person learning through the Actionable Marketing Institute"  />
         </div> 
     </div>
