@@ -1,8 +1,10 @@
+   /* started on actionable marketing css */
 
+   /* starting dic css */
 .start_main_div{
-    /* margin-top: -800px; */
+  
     width: 100%;
-    /* border: 1px solid red; */
+ 
     height: 550px;;
     background-color: #835ce5 ;
     display: flex;
@@ -14,7 +16,7 @@
 }
 
 .start_main2_div{
-    /* border: 1px solid yellow; */
+
     width:75%;
     display: flex;
     margin: auto;
@@ -23,7 +25,7 @@
 
 }
 .start_child_div{
-    /* border: 1px solid red; */
+ 
     margin-top: 15px;
     width: 60%;
 }
@@ -74,11 +76,11 @@
     margin-top: -90px;
     font-size: 17.5px;
     color: white;
-    /* letter-spacing:1px; */
+   
 
 }
 .start_child2_main_div{
-    /* border: 1px solid green; */
+
     width: 42%;
     margin-top: -56px;
 }
@@ -95,6 +97,8 @@
     margin-left: 50px;
 }
 
+
+/* here started lessons ,certificate awards div css*/
 
 .certificate_main_div{
     height:300px;
@@ -116,7 +120,7 @@
 .certificate_sub_div1_img{
    height: 180px;
    width: 180px;
-   /* margin-left: 57px; */
+ 
    vertical-align: middle;
 }
 .certificate_sub_div1_h2{
@@ -126,7 +130,7 @@
 }
 
 
-
+/* here it is started course outcome css div */
 
 .Train_container_main_div{
   margin-top: 50px;
@@ -161,7 +165,7 @@
 
 
 
-
+/* for learining div css */
 
 .Learn_container_main_div{
     height: 500px;
@@ -196,7 +200,7 @@
 
 
 
-
+/* enrolling button div css */
 .market_container_main_div{
     height: 350px;
     
@@ -257,7 +261,7 @@
 
 
 
-        /* here i given features div css */
+        /* It started for courses and features of div and its css */
 
 .courses_container{
     margin-top: 50px;
@@ -284,7 +288,7 @@ color:#000
 
 
 
-
+/* here it is started on all the details of the website info css div */
 
 .details_container{
     width: 65%;
@@ -345,7 +349,7 @@ color:#000
 }
 
 
-
+/* partners of icon or logo div */
 .logo_container{
     margin-top: 200px;
     height: 500px;
@@ -378,6 +382,7 @@ margin-top:60px;
 
 
 
+/* for enroolloning button div css */
 .enroll_container{
     
      height: 530px;
@@ -464,7 +469,7 @@ margin-top:60px;
 
 
 
-         /* here i have witten last div css  */
+    /* in this started for learning price and institutes */
 
 
 
