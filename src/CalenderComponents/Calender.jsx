@@ -61,7 +61,7 @@ function Calender() {
 
     useEffect(() => {
         axios
-            .get("http://localhost:8080/todo")
+            .get("https://co-schedule-clone.herokuapp.com/todo")
             .then((res) => {
                 console.log(res.data.data);
                 setData(res.data.data);
