@@ -5,9 +5,11 @@ import headerImg from "../../assets/Main_Header.png";
 import ProductLogo from "../SVG/ProductLogo";
 import ProductLogo2 from "../SVG/ProductLogo2";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Main() {
     const [showTop, setShowTop] = useState(true);
+    const Navigate = useNavigate();
     // console.log("isLoggedIn: ", isLoggedIn);
     return (
         <div className={styles.parent}>
@@ -140,7 +142,12 @@ export default function Main() {
                             <li>Share your progress with higher-ups</li>
                             <li>Show what your marketing is done</li>
                         </ul>
-                        <div className={styles.Products_btn}>Explore More</div>
+                        <div
+                            className={styles.Products_btn}
+                            onClick={() => Navigate("/callender")}
+                        >
+                            Explore More
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -173,7 +180,12 @@ export default function Main() {
                             <li>Eliminate content bottlenecks</li>
                             <li>Maximize resource to increase output</li>
                         </ul>
-                        <div className={styles.Products_btn}>Explore More</div>
+                        <div
+                            className={styles.Products_btn}
+                            onClick={() => Navigate("/suite")}
+                        >
+                            Explore More
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -202,7 +214,12 @@ export default function Main() {
                             <li>Improve headlines and smart suggestions</li>
                             <li>Find the high-scoring words instantly</li>
                         </ul>
-                        <div className={styles.Products_btn}>Explore More</div>
+                        <div
+                            className={styles.Products_btn}
+                            onClick={() => Navigate("/headline")}
+                        >
+                            Explore More
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -234,7 +251,14 @@ export default function Main() {
                             <li>Spend less time learning & more time doing</li>
                             <li>Learn from industry pros and trust</li>
                         </ul>
-                        <div className={styles.Products_btn}>Explore More</div>
+                        <div
+                            className={styles.Products_btn}
+                            onClick={() =>
+                                Navigate("/ActionableInstitute")
+                            }
+                        >
+                            Explore More
+                        </div>
                     </div>
                 </div>
             </div>
