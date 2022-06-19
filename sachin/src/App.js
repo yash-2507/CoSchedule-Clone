@@ -1,6 +1,6 @@
-import Actionable_Market from './Components/Action_able_page/Action_page';
+import Actionable_Market from './components/Action_able_page/Action_page';
 import './App.css';
-import Customer from './Components/customer/customer';
+import Customer from './components/customer/customer';
 
 
 function App() {

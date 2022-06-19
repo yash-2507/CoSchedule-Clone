@@ -241,8 +241,8 @@ body{
         font-family: "MuseoSans-300",sans-serif; 
         font-size: 13px; 
         /* letter-spacing: 1px; */
-        text-align: center; 
-
+        text-align: center;
+       
     }
   
     .content2_div{
@@ -256,6 +256,7 @@ body{
         font-size:50px;
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
         margin-top: 12px;
+        
         /* letter-spacing: 0.5px; */
     }
 
@@ -268,7 +269,8 @@ body{
         font-family: "MuseoSans-250",sans-serif;
         text-align: center;
         margin-top: 15px;
-        line-height:10px;
+        margin-bottom: 2px;
+        line-height:15px;
     }
 
 
