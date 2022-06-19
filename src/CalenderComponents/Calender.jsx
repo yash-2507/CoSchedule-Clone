@@ -15,6 +15,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import Data from "./data/Data";
 function Calender() {
+    const Navigate = useNavigate();
     const [calender, setCalender] = useState([]);
     const [value, setValue] = useState(moment());
     const [back, setBack] = useState(false);
