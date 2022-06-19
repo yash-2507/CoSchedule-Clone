@@ -40,7 +40,7 @@ export default function SignIn() {
                 dispatch(setUser(res.data.match[0]));
                 inputMailRef.current.value = "";
                 inputPassRef.current.value = "";
-                Navigate("/");
+                Navigate("/MainCalender");
             } else {
                 alert("Wrong Credentials, Please re-check!");
             }
