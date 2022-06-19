@@ -1,4 +1,4 @@
-import Frome from "../componet/From";
+import Frome from "../../componets/From";
 import "../Headline/Headline.css";
 import navbar from "../Headline/navbar.png";
 import welcome from "../Headline/welcome.png";

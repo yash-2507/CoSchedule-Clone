@@ -1,5 +1,5 @@
 import '../Celender/Celender.css';
-import Frome from "../../componet/From"
+import Frome from "../../componets/From"
 import sagar  from "../Celender/Screenshot 2022-06-14 151357.png"
 
 const Celender = ()=>{
