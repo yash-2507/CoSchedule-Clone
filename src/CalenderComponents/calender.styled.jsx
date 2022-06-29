@@ -31,10 +31,10 @@ export const RangeDiv = styled.div`
   font-weight: 400;
   font-style: normal;
   font-family: MuseoSans-700, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /* text-align: center;
+   text-align: center;
 align-content: center;
 align-items: center ;
-align-self: center; */
+align-self: center; 
 `;
 export const DaynameDivs = styled.div`
   width: 100%;

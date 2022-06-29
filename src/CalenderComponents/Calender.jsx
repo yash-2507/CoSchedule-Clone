@@ -15,6 +15,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import Data from "./data/Data";
 function Calender() {
+    const Navigate = useNavigate();
     const [calender, setCalender] = useState([]);
     const [value, setValue] = useState(moment());
     const [back, setBack] = useState(false);
@@ -25,10 +26,10 @@ function Calender() {
     useEffect(() => {
         setTimeout(() => {
             setToAdd({
-                title: "learn react",
-                task: ["learn hooks", "learn states"],
+                title: "Learn React",
+                task: ["Hooks", "States"],
             });
-        }, 5000);
+        }, 30000);
     }, []);
 
     const startDay = value.clone().startOf("month").startOf("week");
@@ -102,7 +103,7 @@ function Calender() {
     let z;
     return (
         <MainDiv>
-            <div>
+            <div style={{textAlign:"center"}}>
                 <h4>CALENDER</h4>
             </div>
             <div style={{ width: "90%", margin: "auto" }}>

@@ -124,9 +124,9 @@ export default function Main() {
                         />
                     </div>
                     <div className={styles.Main_Products_Content}>
-                        <h2>Marketing Callender</h2>
+                        <h2>Marketing Calender</h2>
                         <p>
-                            A callender that helps you see, schedule and share
+                            A calender that helps you see, schedule and share
                             your marketting
                         </p>
                         <ul
@@ -197,7 +197,7 @@ export default function Main() {
                         <ProductLogo />
                     </div>
                     <div className={styles.Main_Products_Content}>
-                        <h2>Healine Studio</h2>
+                        <h2>Headline Studio</h2>
                         <p>
                             Write better headlines that will boost your traffic.
                         </p>
