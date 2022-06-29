@@ -37,7 +37,7 @@ export default function SignUp() {
         console.log(details);
         const postUser = async () => {
             try {
-                await axios.post("http://localhost:8080/signup", details);
+                await axios.post("https://co-schedule-clone.herokuapp.com/signup", details);
                 alert("User Registered! Now you can Login...");
                 Navigate("/login");
             } catch (error) {

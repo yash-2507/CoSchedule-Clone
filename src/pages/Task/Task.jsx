@@ -76,7 +76,7 @@ const Task = () => {
             title: title,
             todos: todo,
         };
-        await axios.post("http://localhost:8080/todo", data);
+        await axios.post("https://co-schedule-clone.herokuapp.com/todo", data);
         alert("Todo added to DateBase");
         Navigate("/MainCalender");
     };

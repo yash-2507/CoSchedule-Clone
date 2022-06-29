@@ -30,7 +30,7 @@ export default function SignIn() {
     const handleSubmit = (e) => {
         e.preventDefault();
         const postLogin = async () => {
-            const res = await axios.post("http://localhost:8080/login", {
+            const res = await axios.post("https://co-schedule-clone.herokuapp.com/login", {
                 mail,
                 pass,
             });
